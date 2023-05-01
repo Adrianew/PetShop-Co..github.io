@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> PetShop Co.</title>
+        <link rel="stylesheet" href="../css/products.css">
+        <script src="../javascript/products.js"></script>
+
+    </head>
+   
+    <body>
+        <header>
+            <nav>
+              <a href="index.html">Acasă</a>
+              <a href="products.html">Produse</a>
+              <a href="about.html">Despre noi</a>
+              <a href="contact.html">Contact</a>
+              <a href="cont.html">Contul meu</a>
+              <div class="cart">
+                <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                <span>0</span>
+              </div>
+            </nav>
+          </header>
+
+          <h1>Produse</h1>
+          
+          
+      
+        
+          <div class="container">
+            <div class="filter-container">
+              <!-- filtru produse -->
+              <div class="product-filter">
+                <h2>Filtrează după:</h2>
+                <div id="product-list-container">
+                    <!-- Aici vom afișa produsele filtrate -->
+                  </div>
+                  
+                  <div id="filter-container">
+                    <div class="filter-option">
+                      <label for="category-select">Categorie:</label>
+                      <select id="category-select">
+                        <option value="all">Toate</option>
+                        <option value="clothing">Haine animale</option>
+                        <option value="food">Hrană animale</option>
+                        <option value="accessories">Accesorii</option>
+                        <option value="toys">Jucării</option>
+                      </select>
+                    </div>
+                    <div class="filter-option">
+                      <label for="price-select">Preț:</label>
+                      <select id="price-select">
+                        <option value="all">Toate</option>
+                        <option value="0-50">Sub 50 lei</option>
+                        <option value="50-100">50-100 lei</option>
+                        <option value="100-200">100-200 lei</option>
+                        <option value="200+">Peste 200 lei</option>
+                      </select>
+                    </div>
+                    <button id="apply-button">Aplică filtrele</button>
+                  </div>
+          </div>
+            </div>
+            <div class="products-section">
+                <div class="product">
+                  <img src="../photo/costum catel.jpeg" alt="Costum cățel">
+                  <h3>Costum Olaf căini</h3>
+                  <p class="price">100 Ron</p>
+                  <a href="#" class="btn-add-to-cart">Adaugă în coș</a>
+                </div>
+                <div class="product">
+                  <img src="../photo/Brit care senior 1kg.jpg" alt="Hrană căini">
+                  <h3>Bit care 1kg</h3>
+                  <p class="price">30 Ron</p>
+                  <a href="#" class="btn-add-to-cart">Adaugă în coș</a>
+                </div>
+                <div class="product">
+                  <img src="../photo/Hrana pisici hills.avif" alt="Hrana pisici">
+                  <h3>Hill's Vet Essentials 2kg</h3>
+                  <p class="price">40 Ron</p>
+                  <a href="#" class="btn-add-to-cart">Adaugă în coș</a>
+                </div>
+                <div class="product">
+                  <img src="../photo/palarie catei.jpg" alt="Pălărie căței">
+                  <h3>Pălărie galbenă Haloween</h3>
+                  <p class="price">35 Ron</p>
+                  <a href="#" class="btn-add-to-cart">Adaugă în coș</a>
+                </div>
+                <div class="product">
+                  <img src="../photo/set hanorac negru cu glc[.webp" alt="Hanorac pisici">
+                  <h3>Set hanorac negru cu glugă călduros + accesorii pentru pisici</h3>
+                  <p class="price">80 Ron</p>
+                  <a href="#" class="btn-add-to-cart">Adaugă în coș</a>
+                </div>
+                <div class="product">
+                  <img src="../photo/hanorac catei.jpeg" alt="Hanorac pisici">
+                  <h3>Set hanorac negru cu glugă călduros + accesorii pentru pisici</h3>
+                  <p class="price">80 Ron</p>
+                  <a href="#" class="btn-add-to-cart">Adaugă în coș</a>
+                </div>
+                <div class="product">
+                  <img src="../photo/geaca pt caini.jpeg" alt="Hanorac pisici">
+                  <h3>Set hanorac negru cu glugă călduros + accesorii pentru pisici</h3>
+                  <p class="price">80 Ron</p>
+                  <a href="#" class="btn-add-to-cart">Adaugă în coș</a>
+                </div>
+                <div class="product">
+                  <img src="../photo/mancare bit care puppy 1kg.avif" alt="Hanorac pisici">
+                  <h3>Set hanorac negru cu glugă călduros + accesorii pentru pisici</h3>
+                  <p class="price">80 Ron</p>
+                  <a href="#" class="btn-add-to-cart">Adaugă în coș</a>
+                </div>
+                <div class="product">
+                  <img src="../photo/hrana caini bit care salmon adult skin& coat 12kg.avif" alt="Hanorac pisici">
+                  <h3>Set hanorac negru cu glugă călduros + accesorii pentru pisici</h3>
+                  <p class="price">80 Ron</p>
+                  <a href="#" class="btn-add-to-cart">Adaugă în coș</a>
+                </div>
+
+        <footer>
+            <div class="footer-container">
+              <div class="footer-column">
+                <h3>Despre noi</h3>
+                <p>Noi suntem un shop de înbrăcăminte și accesorii pentru animalele de companie, care favorizează sustenabilitatea mediului înconjurător și sănatatea animăluțelor. </p>
+              </div>
+              <div class="footer-column">
+                <h3>Navigare</h3>
+                <ul>
+                  <li><a href="index.html">Acasa</a></li>
+                  <li><a href="products.html">Produse</a></li>
+                  <li><a href="about.html">Despre noi</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h3>Aboneaza-te la newsletter</h3>
+                <form>
+                  <input type="email" placeholder="Introdu adresa ta de email" />
+                  <button type="submit">Aboneaza-te</button>
+                </form>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p>Toti drepturile rezervate &copy; 2023</p>
+            </div>
+          </footer>
+          
+      
+    </body>
+</html>

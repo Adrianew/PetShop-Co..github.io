@@ -1,0 +1,441 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px;
+}
+
+nav a:hover {
+  color: #6ab4c9;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+}
+
+.cart a {
+  text-decoration: none;
+  color: #333;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.cart span {
+  background-color: #6ab4c9;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .search-container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search-container input[type="text"],
+  .search-container select {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    margin-right: 10px;
+  }
+  
+  .search-container input[type="submit"] {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .search-container input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .search-container {
+      flex-wrap: wrap;
+    }
+    
+    .search-container input[type="text"],
+    .search-container select,
+    .search-container input[type="submit"] {
+      margin: 5px 0;
+    }
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .banner h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #333;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  .banner .btn-shop-now {
+    background-color: #008080;
+    color: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideIn 1s ease-in-out forwards;
+    animation-delay: 1s;
+  }
+  
+  .products-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 0;
+    width: 90%;
+  }
+  
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    margin-bottom: 50px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .product:hover {
+    transform: translateY(-10px);
+  }
+  
+  .product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .product h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .product p.price {
+    font-size: 1.2rem;
+    color: #008080;
+    font-weight: bold;
+  }
+  
+  .product .btn-add-to-cart {
+    background-color: #008080;
+    color: #fff;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  .product .btn-add-to-cart:hover {
+    background-color: #006666;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+/* sectiunea testimoniale */
+.testimonials {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonial {
+  display: flex;
+  margin-bottom: 40px;
+  animation: testimonial-fade-in 0.5s ease-in-out;
+}
+
+.testimonial-content {
+  flex: 1;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  animation: testimonial-slide-in 0.5s ease-in-out;
+}
+
+.quote {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.author {
+  text-align: right;
+}
+
+@keyframes testimonial-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes testimonial-slide-in {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Social media links */
+.social-media {
+  background-color: #f2f2f2;
+  padding: 30px;
+}
+
+.social-media h2 {
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #fff;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  transform: translateY(-5px);
+}
+
+.social-icons a:nth-child(1) {
+  background-color: #3b5998;
+}
+
+.social-icons a:nth-child(2) {
+  background-color: #00aced;
+}
+
+.social-icons a:nth-child(3) {
+  background-color: #c32aa3;
+}
+
+.social-icons a:nth-child(4) {
+  background-color: #cd201f;
+}
+
+
+/* Sectiunea footer */
+
+footer {
+  background-color: #f8f8f8;
+  box-shadow: 0px -2px 5px rgba(0,0,0,0.2);
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #777;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer p {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #777;
+}
+
+
+
+/* Footer navigation */
+/* Style pentru zona footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Style pentru containerul din footer */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Style pentru coloana din footer */
+.footer-column {
+  flex-basis: 30%;
+  margin-bottom: 30px;
+}
+
+/* Style pentru titlul din coloana din footer */
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Style pentru link-urile din coloana din footer */
+.footer-column a {
+  display: block;
+  color: #fff;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Style pentru link-urile din coloana din footer la hover */
+.footer-column a:hover {
+  color: #FFA500;
+}
+
+/* Style pentru text-ul din coloana din footer */
+.footer-column p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Style pentru newsletter din footer */
+.footer-newsletter {
+  margin-top: 30px;
+}
+
+/* Style pentru input-ul de email din newsletter */
+.footer-newsletter input[type="email"] {
+  padding: 10px;
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+/* Style pentru butonul de abonare la newsletter */
+.footer-newsletter input[type="submit"] {
+  background-color: #FFA500;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Style pentru butonul de abonare la newsletter la hover */
+.footer-newsletter input[type="submit"]:hover {
+  background-color: #fff;
+  color: #FFA500;
+}
+
+/* Style pentru link-urile din zona de navigatie din footer */
+.footer-nav a {
+  color: #fff;
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Style pentru link-urile din zona de navigatie din footer la hover */
+.footer-nav a:hover {
+  color: #FFA500;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop Co.</title>
+    <link rel="stylesheet" href="../css/about.css">
+    <script src="../javascript/about.js"></script>
+  </head>
+  <body>
+    
+  
+    <header>
+      <nav>
+        <a href="index.html">Acasă</a>
+        <a href="products.html">Produse</a>
+        <a href="about.html">Despre noi</a>
+        <a href="contact.html">Contact</a>
+        <a href="cont.html">Contul meu</a>
+        <div class="cart">
+          <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          <span>0</span>
+        </div>
+      </nav>
+    </header>
+   
+    <main>
+      
+      <section>
+        <!-- Adauga aici continutul pentru sectiunea principala a paginii -->
+        <section id="our-story">
+          <div class="banner">
+            <h1>Povestea noastră</h1>
+          </div>
+           <div class="paragraph">
+            <p>  Bine ați venit în shopul nostru! Acest shop a fost înființat în anul 2023 de un adolescent de 17 ani, care a crescut cu o pasiune pentru animale și natură.</p>
+            <p>  De la început, am avut o viziune clară: să oferim produse de calitate pentru animalele de companie ale clienților noștri, folosind ingrediente naturale și durabile. Astăzi, suntem măndri să spunem că am devenit o destinatie preferată pentru iubitorii de animale de companie din toată lumea.</p>
+            <p>  Ne angăjam să oferim o experientă de cumpărături de neuitat, cu servicii și produse de cea mai bună calitate, iar intreaga noastra echipa este dedicată să vă ajute să aveți grijă de animalul dumneavoastră de companie, dar și de mediul înconjurător. Vă mulțumim pentru că ați ales shopul nostru și vă așteptăm cu drag să descoperiți ce avem de oferit.</p>
+          </div>
+          
+        </section>
+        
+      </section>
+    </main>
+    
+    
+      <footer>
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>Despre noi</h3>
+            <p>Noi suntem un shop de înbrăcăminte și accesorii pentru animalele de companie, care favorizează sustenabilitatea mediului înconjurător și sănatatea animăluțelor. </p>
+          </div>
+          <div class="footer-column">
+            <h3>Navigare</h3>
+            <ul>
+              <li><a href="index.html">Acasa</a></li>
+              <li><a href="products.html">Produse</a></li>
+              <li><a href="about.html">Despre noi</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Aboneaza-te la newsletter</h3>
+            <form>
+              <input type="email" placeholder="Introdu adresa ta de email" />
+              <button type="submit">Aboneaza-te</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>Toti drepturile rezervate &copy; 2023</p>
+        </div>
+      </footer>
+      
+  
+    
+    <!-- Adauga aici link-urile catre bibliotecile de JavaScript, cum ar fi jQuery -->
+    <script>
+      var header = document.querySelector('header');
+      var navigation = document.querySelector('.navigation');
+  
+      header.addEventListener('mouseenter', function() {
+        navigation.classList.add('show-navigation');
+      });
+  
+      header.addEventListener('mouseleave', function() {
+        navigation.classList.remove('show-navigation');
+      });
+    </script>
+  </body>
+</html>
